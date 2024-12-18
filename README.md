@@ -58,7 +58,9 @@ Untuk menjalankan proyek ini, pastikan Anda telah menginstal:
 5. **Jalankan Migrasi dan Seeder**
    Buat tabel database dan masukkan data dummy:
    ```bash
-   php artisan migrate --seed
+   php artisan migrate
+   php artisan db:seed --class=CategorySeeder
+   php artisan db:seed --class=FilmSeeder
    ```
 
 6. **Jalankan Aplikasi**
@@ -80,10 +82,3 @@ Untuk menjalankan proyek ini, pastikan Anda telah menginstal:
 - **resources/views/**: Berisi template Blade untuk frontend.
 - **routes/web.php**: Mendefinisikan rute untuk aplikasi.
 
-
-## Lisensi
-Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file LICENSE untuk detailnya.
-
----
-
-Untuk masalah atau kontribusi, jangan ragu untuk membuka pull request atau menghubungi pemilik repository.
